@@ -11,8 +11,8 @@ function Rect(bot, left, top, right) {
    let top = Math.min(this.top, rect.top);
    
    if (left < right && bot < top) {
-      let intersectArea = (right-left) * (top-bot);
-      return this.area() + rect.area() - intersectArea;
+      let intersect = new Rect(bot, left, top, right);
+      return this.area() + rect.area() - intersect.area();
    }
    
    return -1;

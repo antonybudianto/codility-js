@@ -8,7 +8,7 @@ function prefixSum(A) {
  arr[0] = A[0];
  sum = arr[0];
  
- for(let i=0;i<len;i++) {
+ for(let i=1;i<len;i++) {
      sum += A[i];
      arr[i] = sum;
  }

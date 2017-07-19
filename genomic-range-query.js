@@ -44,7 +44,6 @@ function solution(S, P, Q) {
     for(let i=0;i<len;i++) {
         let a = P[i], b = Q[i];
         let sum = slice(pref, a, b);
-        let max = 0, cur = 0;
         
         for(let i=0;i<4;i++) {
             if (sum[i] > 0) {

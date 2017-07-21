@@ -1,7 +1,7 @@
 // Optimized for space
 
 function countingSort(A, min, max) {
-  let len = max - min;
+  let len = max - min + 1;
   let counters = new Array(len);
   for(let i=0;i<len;i++) counters[i] = 0;
   let alen = A.length;

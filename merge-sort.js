@@ -1,6 +1,6 @@
 const MergeSort = (function() {
  function sort(A) {
-   let len = A.length
+   let len = A.length;
    if (len <= 1) return A;
    let mid = Math.floor(len / 2);
    let left = A.slice(0, mid);

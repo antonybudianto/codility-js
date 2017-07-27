@@ -22,7 +22,7 @@ function solution(S) {
           let idxB = stack[0];
           if (idxA === idxB) {
               stack.shift();
-          } else if (counter === 0) {
+          } else if (counter <= 0) {
             return 0;  
           } else {
              counter -= idxA+1;

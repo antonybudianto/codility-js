@@ -1,5 +1,7 @@
 // worst time ~0.340s
 
+// worst time ~0.340s
+
 function solution(A, B) {
     // write your code in JavaScript (Node.js 6.4.0)
     let len = A.length;
@@ -26,6 +28,8 @@ function solution(A, B) {
                 count++;
             } else if (val === -1) {
                 count++;
+            } else if (val < A[i]) {
+                return count + len - i - 1;
             }
         }
         return count;
@@ -82,3 +86,4 @@ function solution(A, B) {
 
     return stack.length;
 }
+

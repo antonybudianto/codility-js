@@ -1,7 +1,5 @@
 // worst time ~0.340s
 
-// worst time ~0.340s
-
 function solution(A, B) {
     // write your code in JavaScript (Node.js 6.4.0)
     let len = A.length;
@@ -86,4 +84,3 @@ function solution(A, B) {
 
     return stack.length;
 }
-

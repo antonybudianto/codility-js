@@ -1,3 +1,5 @@
+// Same solution for Nested, passed 100% for both
+
 function solution(S) {
     const openBrackets = ['(', '{', '['];
     const closeBrackets = [')', '}', ']'];

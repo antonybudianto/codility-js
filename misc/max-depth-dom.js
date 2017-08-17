@@ -16,4 +16,4 @@ function solution(N) {
   return count.reduce((a,b) => a > b ? a : b, 0)
 }
 
-solution($('body > ul'))
+solution($('body > ul,ol'))

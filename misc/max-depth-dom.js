@@ -1,9 +1,12 @@
 function solution(N) {
   let children = N.children()
   let len = children.length;
-  let count = new Array(len)
-  for(let i=0;i<len;i++) count[i] = 0
   
+  // construct counter
+  let count = new Array(len)
+  for(let i=0;i<len;i++) count[i] = 1
+  
+  // traverse children and count deep
    children.each((i,a) => {
     let achild = $(a).children();
     while(achild.length) {
@@ -16,6 +19,7 @@ function solution(N) {
     }
   });
   
+  // find the max deep
   return count.reduce((a,b) => a > b ? a : b, 0)
 }
 

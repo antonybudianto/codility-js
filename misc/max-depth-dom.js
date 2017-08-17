@@ -1,6 +1,9 @@
 function solution(N) {
   let children = N.children()
-  let count=[0,0,0]
+  let len = children.length;
+  let count = new Array(len)
+  for(let i=0;i<len;i++) count[i] = 0
+  
    children.each((i,a) => {
     let achild = $(a).children();
     while(achild.length) {
